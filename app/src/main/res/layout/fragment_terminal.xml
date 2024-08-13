@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 受信欄 -->
+    <TextView
+        android:id="@+id/receive_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:scrollbars="vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <!-- 横線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider" />
+
+    <!-- 入力欄と送信ボタン -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- SSID入力欄 -->
+        <EditText
+            android:id="@+id/ssid_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SSID"
+            android:inputType="text" />
+
+        <!-- Password入力欄 -->
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <!-- Line Token入力欄 -->
+        <EditText
+            android:id="@+id/line_token_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Line Token"
+            android:inputType="text" />
+
+        <!-- 送信ボタン -->
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="送信"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</LinearLayout>
